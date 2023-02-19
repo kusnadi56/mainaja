@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' ,sans-serif;
+    text-align: justify;
+}
+
+
+/* effect */
+body{
+    min-height: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    
+}
+
+.container {
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.text-center{
+    padding-top: 80px;
+    font-size: 50px;
+}
+
+.col {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+.container1{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.bubbles{
+    position: relative;
+    display: flex;
+    overflow:hidden;
+    z-index: 2;
+}
+.bubbles span
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #d62828;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #d6282844, 
+    0 0 50px #d62828,
+    0 0 100px #d62828;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+
+} 
+.bubbles span:nth-child(even)
+{
+    background: #ffca3a ;
+    box-shadow: 0 0 0 10px #ffca3a44, 
+    0 0 50px #ffca3a,
+    0 0 100px #ffca3a;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+
+.column{
+    gap: 40px;
+    padding: 50px;
+}
+.card .card-img-top1{
+    width: 400px;
+}
+h3{
+    padding: 30px;
+}
+footer{
+    background: black;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: aliceblue;
+    
+}
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-container h3{
+    line-height: -5rem;
+    margin-top: -25px;
+    align-items: center;
+}
+.name{
+    list-style: none;
+    align-items: center;
+    margin-top: -30px;
+    font-size: 13px;
+    margin-left: -30px;
+}
+.name br{
+gap: 10px;
+}
